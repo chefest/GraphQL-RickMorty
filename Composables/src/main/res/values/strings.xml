@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="uimage_content_description">Image</string>
+    <string name="name">Name: %1$s</string>
+    <string name="gender">Gender: %1$s</string>
+    <string name="created">Created: %1$s</string>
 </resources>

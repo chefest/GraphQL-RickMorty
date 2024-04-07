@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "RickMorty"
 include(":app")
 include(":Composables")
+include(":Data")

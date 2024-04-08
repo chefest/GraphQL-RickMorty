@@ -1,0 +1,14 @@
+query GetCharactersQuery {
+    characters {
+        results {
+            created
+            gender
+            id
+            image
+            type
+            status
+            species
+            name
+        }
+    }
+}

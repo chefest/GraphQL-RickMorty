@@ -10,9 +10,9 @@ android {
 
     defaultConfig {
         minSdk = 28
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+        buildFeatures.buildConfig = true
     }
 
     buildTypes {
@@ -21,6 +21,23 @@ android {
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
+            )
+            buildConfigField(
+                type = "String",
+                name = "APOLLO_SERVER",
+                value = "\"https://studio.apollographql.com/public/rick-and-morty-a3b90u/\""
+            )
+        }
+        debug {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            buildConfigField(
+                type = "String",
+                name = "APOLLO_SERVER",
+                value = "\"https://studio.apollographql.com/public/rick-and-morty-a3b90u/\""
             )
         }
     }

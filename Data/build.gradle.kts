@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.graphql)
 }
 
 android {
@@ -32,12 +33,19 @@ android {
     }
 }
 
-dependencies {
+apollo {
+    service("service") {
+        packageName.set("com.chefsito.rickmorty.data.graphql")
+    }
+}
 
+dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    //GRAPHQL
+    implementation(libs.graphql)
 }

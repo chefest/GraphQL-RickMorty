@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.dagger.hilt.android")
+    kotlin("kapt")
 }
 
 android {
@@ -71,6 +73,8 @@ dependencies {
 
     //HILT
     implementation(libs.hilt)
-    implementation(libs.hiltCompiler)
-
+    kapt(libs.hiltCompiler)
+}
+kapt {
+    correctErrorTypes = true
 }

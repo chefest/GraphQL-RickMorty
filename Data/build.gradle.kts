@@ -25,7 +25,7 @@ android {
             buildConfigField(
                 type = "String",
                 name = "APOLLO_SERVER",
-                value = "\"https://studio.apollographql.com/public/rick-and-morty-a3b90u/\""
+                value = "\"https://rickandmortyapi.com/graphql\""
             )
         }
         debug {
@@ -37,7 +37,7 @@ android {
             buildConfigField(
                 type = "String",
                 name = "APOLLO_SERVER",
-                value = "\"https://studio.apollographql.com/public/rick-and-morty-a3b90u/\""
+                value = "\"https://rickandmortyapi.com/graphql\""
             )
         }
     }

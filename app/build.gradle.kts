@@ -68,4 +68,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    //HILT
+    implementation(libs.hilt)
+    implementation(libs.hiltCompiler)
+
 }

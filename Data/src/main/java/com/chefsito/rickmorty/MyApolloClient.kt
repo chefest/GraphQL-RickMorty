@@ -5,6 +5,7 @@ import com.chefsito.rickmorty.data.BuildConfig
 
 class MyApolloClient {
 
+    @Deprecated("Singleton is not needed anymore")
     companion object {
         private lateinit var INSTANCE: MyApolloClient
         fun getInstance(): MyApolloClient {

@@ -6,7 +6,7 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Preview
 @Composable
-fun UCharacterCardPreview(
+private fun UCharacterCardPreview(
 ) {
     UCharacterCard(
         modifier = Modifier,
